@@ -7,7 +7,7 @@ import useToken from './Hooks/useToken';
 function App() {
 
 	const [lang, setLang] = useState(JSON.parse(window.localStorage.getItem('lang')) || 'en');
-	const [Theme , setTheme] = useState(JSON.parse(window.localStorage.getItem('theme')) || false)
+	const [Theme , setTheme] = useState(JSON.parse(window.localStorage.getItem('theme')) || false);
 
 	const [token] = useToken();
 
@@ -17,7 +17,7 @@ function App() {
 
 	}else{
 		return <UnauthenticadApp/>
-	}
+	};
 
 }
 
